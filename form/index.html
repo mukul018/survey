@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="mk">
+        <header class="header">
+            <h1 id="title" class="text-center">Laptop's Survey Form</h1>
+        <p id="description" class="description text-center"> Thank you for taking the time to help us
+        </p>
+        </header>
+        <form id="survey-form">
+            <div id="form-group">
+                <label  id ="name-label" class="label">Name</label>
+                <input
+                type="text"
+                name="name"
+                id="name"
+                class="form-control"
+                placeholder="Enter your name"
+                required
+                />
+                <label  id ="email-label" class="label">Email</label>
+                <input
+                type="email"
+                name="email"
+                id="email"
+                class="form-control"
+                placeholder="Enter your email"
+                required
+                />
+                <label class="label">College Name</label>
+                <input
+                type="text"
+                name="college_name"
+                id="college_name"
+                class="form-control"
+                placeholder="Enter your College Name"
+                required
+                />
+                <label id ="number-label" class="label">Age</label>
+                <input
+                type="number"
+                name="Age"
+                id="number"
+                min="15"
+                max="50"
+                class="form-control"
+                placeholder="Enter your Age"
+                required
+                />
+            </div>
+            <div class="form-group">
+                <p>Name of your Laptop's company</p>
+                <select id="dropdown" name="role" class="form-control" required>
+                    <option disabled selected value>Select one</option>
+                    <option value="msi">MSI</option>
+                    <option value="dell">Dell</option>
+                    <option value="lenevo">Lenevo</option>
+                    <option value="hp">HP</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>Would you recommend your laptop to a friend?</p>
+                <label>
+                    <input
+                    name="user-recommend"
+                    value="definitely"
+                    type="radio"
+                    class="input-radio"
+                    checked
+                     />Definitely</label>
+                <label>
+                     <input
+                    name="user-recommend"
+                    value="maybe"
+                    type="radio"
+                    class="input-radio"
+                     />Maybe</label>
+
+                <label>
+                    <input
+                    name="user-recommend"
+                    value="not-sure"
+                    type="radio"
+                    class="input-radio"
+                     />Not sure
+                </label>    
+            </div>
+
+            <div class="form-group">
+                <p>For what purpose do you use your laptop
+                    <span class="clue">(Check all that apply)</span>
+                </p>
+                <label
+                ><input
+                  name="prefer"
+                  value="gaming"
+                  type="checkbox"
+                  class="input-checkbox"
+                />Gaming</label
+              >
+              <label>
+                <input
+                  name="prefer"
+                  value="studies"
+                  type="checkbox"
+                  class="input-checkbox"
+                />Studies</label
+              >
+              <label
+                ><input
+                  name="prefer"
+                  value="entertainment"
+                  type="checkbox"
+                  class="input-checkbox"
+                />Entertainment</label
+              >
+              <label
+                ><input
+                  name="prefer"
+                  value="others"
+                  type="checkbox"
+                  class="input-checkbox"
+                />Others</label
+              >
+            </div>
+
+            <div class="form-group">
+                <p>
+                    Comments
+                </p>
+                <textarea
+                  id="comments"
+                  class="input-textarea"
+                  name="comment"
+                  placeholder="Enter your comment here..."
+                ></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">
+                    Submit
+                  </button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
